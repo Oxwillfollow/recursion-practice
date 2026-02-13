@@ -5,4 +5,12 @@ export const fibonacci = (n) => {
   return fibonacci(n - 1) + fibonacci(n - 2);
 };
 
-export const fibs = (n) => {};
+export const fibs = (n) => {
+  let fibsArr = [];
+
+  for (let i = 0; i < n; i++) {
+    fibsArr.push(fibonacci(i));
+  }
+
+  return fibsArr;
+};
