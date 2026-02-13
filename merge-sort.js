@@ -1,6 +1,5 @@
 export const mergeSort = (arr) => {
   // BASE CASE
-  // If array size is 1 or 0, compare it to the other array value if passed and return array size of 1, with the smaller value
   if (arr.length <= 1) return arr;
 
   // CUT ARRAY IN HALF
