@@ -14,7 +14,8 @@ test("5 items", () => {
 
 test("Doesn't mutate input array", () => {
   const originalArr = [1, 3, 2];
-  const inputArr = [...inputArr];
-  mergeSort(copyArr);
-  expect(originalArr.toStrictEqual([inputArr]));
+  const inputArr = [...originalArr];
+
+  mergeSort(inputArr);
+  expect(originalArr).toStrictEqual(inputArr);
 });
