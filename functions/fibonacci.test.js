@@ -24,6 +24,6 @@ describe("fibonacci tests", () => {
 
 describe("fib tests", () => {
   test("n = 8", () => {
-    expect(fibs(8)).toEqual([0, 1, 1, 2, 3, 5, 8, 13]);
+    expect(fibs(8)).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21]);
   });
 });
